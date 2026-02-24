@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function NavigationHeader() {
@@ -38,8 +38,8 @@ export default function NavigationHeader() {
               key={link.path}
               to={link.path}
               className={`relative group py-3 px-4 lg:px-5 rounded-lg transition-all duration-300 font-semibold text-sm lg:text-base whitespace-nowrap ${isActive(link.path)
-                  ? 'text-blue-600 border-b-3 border-blue-600'
-                  : 'text-gray-700 hover:text-blue-600'
+                ? 'text-blue-600 border-b-3 border-blue-600'
+                : 'text-gray-700 hover:text-blue-600'
                 }`}
               title={link.label}
             >
@@ -72,8 +72,8 @@ export default function NavigationHeader() {
               to={link.path}
               onClick={() => setIsMenuOpen(false)}
               className={`px-4 py-3 border-l-4 transition-all duration-300 text-sm font-semibold ${isActive(link.path)
-                  ? 'bg-blue-50 text-blue-600 border-l-blue-600'
-                  : 'text-gray-700 border-l-transparent hover:bg-gray-50 hover:text-blue-600 hover:border-l-blue-300'
+                ? 'bg-blue-50 text-blue-600 border-l-blue-600'
+                : 'text-gray-700 border-l-transparent hover:bg-gray-50 hover:text-blue-600 hover:border-l-blue-300'
                 }`}
             >
               {link.label}

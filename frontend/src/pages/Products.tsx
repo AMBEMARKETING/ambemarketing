@@ -1,7 +1,26 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+
+// Type definition for product
+type Product = {
+  name: string;
+  price: string;
+  specs: string;
+};
+
+// Type definition for product category
+type ProductCategory = {
+  id: string;
+  name: string;
+  icon: string;
+  color: string;
+  image: string;
+  description: string;
+  products: Product[];
+  brands: string[];
+};
 
 // Modal Component
-function ProductModal({ category, onClose }: { category: any; onClose: () => void }) {
+function ProductModal({ category, onClose }: { category: ProductCategory; onClose: () => void }) {
   return (
     <>
       {/* Backdrop */}
@@ -46,7 +65,7 @@ function ProductModal({ category, onClose }: { category: any; onClose: () => voi
                 <span>📦</span> Featured Products ({category.products.length})
               </h3>
               <div className="space-y-3">
-                {category.products.map((product: any, idx: number) => (
+                {category.products.map((product: Product, idx: number) => (
                   <div
                     key={idx}
                     className="p-4 bg-gradient-to-r from-gray-50 to-white rounded-lg border-2 border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all"
