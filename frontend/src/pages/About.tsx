@@ -1,108 +1,11 @@
+import { Link } from 'react-router-dom';
+import type { CSSProperties } from 'react';
+import { aboutText, specializationText } from '../data/products';
+import { ArrowRight, ShieldIcon, GridIcon, TruckIcon } from '../components/Icons';
 
-
-export default function About() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 py-8 sm:py-16">
-        <h2 className="text-2xl sm:text-4xl font-bold text-center text-gray-800 mb-8 sm:mb-12">About AMBE MARKETING</h2>
-
-        {/* Main Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12 mb-8 sm:mb-16">
-          <div>
-            <h3 className="text-lg sm:text-2xl font-bold text-blue-600 mb-4 sm:mb-6">Who We Are</h3>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-              AMBE MARKETING is a professional trading and distribution enterprise committed to providing high-quality products
-              and exceptional service to our valued clients. We specialize in sourcing, procurement, and supply of premium products
-              from world-renowned brands.
-            </p>
-            <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-              Our expertise spans across multiple product categories, ensuring we can meet diverse client needs with professionalism
-              and integrity. We are proud to be registered on GeM (Government e-Marketplace), enabling us to serve government
-              organizations and public sector undertakings.
-            </p>
-          </div>
-
-          <div className="bg-blue-50 p-4 sm:p-8 rounded-lg">
-            <h3 className="text-lg sm:text-2xl font-bold text-blue-600 mb-4 sm:mb-6">Our Mission</h3>
-            <ul className="space-y-3 sm:space-y-4">
-              <li className="flex items-start gap-2 sm:gap-3">
-                <span className="text-blue-600 text-xl sm:text-2xl flex-shrink-0">✓</span>
-                <p className="text-sm sm:text-base text-gray-700">To deliver authentic, high-quality products with competitive pricing</p>
-              </li>
-              <li className="flex items-start gap-2 sm:gap-3">
-                <span className="text-blue-600 text-xl sm:text-2xl flex-shrink-0">✓</span>
-                <p className="text-sm sm:text-base text-gray-700">To maintain highest standards of professionalism and customer service</p>
-              </li>
-              <li className="flex items-start gap-2 sm:gap-3">
-                <span className="text-blue-600 text-xl sm:text-2xl flex-shrink-0">✓</span>
-                <p className="text-sm sm:text-base text-gray-700">To build long-term partnerships based on trust and reliability</p>
-              </li>
-              <li className="flex items-start gap-2 sm:gap-3">
-                <span className="text-blue-600 text-xl sm:text-2xl flex-shrink-0">✓</span>
-                <p className="text-sm sm:text-base text-gray-700">To support government procurement initiatives through GeM platform</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Key Values */}
-        <div className="bg-gradient-to-r from-blue-100 to-blue-50 p-6 sm:p-12 rounded-lg mb-8 sm:mb-16">
-          <h3 className="text-lg sm:text-2xl font-bold text-gray-800 mb-6 sm:mb-8 text-center">Our Core Values</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
-              <p className="text-3xl sm:text-4xl mb-3">🎯</p>
-              <h4 className="text-sm sm:text-lg font-bold text-gray-800 mb-2">Integrity</h4>
-              <p className="text-xs sm:text-sm text-gray-600">Honest dealings and transparent practices in all transactions</p>
-            </div>
-            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
-              <p className="text-3xl sm:text-4xl mb-3">⭐</p>
-              <h4 className="text-sm sm:text-lg font-bold text-gray-800 mb-2">Quality</h4>
-              <p className="text-xs sm:text-sm text-gray-600">Only authentic products from authorized distributors</p>
-            </div>
-            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
-              <p className="text-3xl sm:text-4xl mb-3">🤝</p>
-              <h4 className="text-sm sm:text-lg font-bold text-gray-800 mb-2">Reliability</h4>
-              <p className="text-xs sm:text-sm text-gray-600">Consistent delivery and dependable customer support</p>
-            </div>
-            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
-              <p className="text-3xl sm:text-4xl mb-3">💡</p>
-              <h4 className="text-sm sm:text-lg font-bold text-gray-800 mb-2">Innovation</h4>
-              <p className="text-xs sm:text-sm text-gray-600">Adapting to market trends and customer needs</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Company Details */}
-        <div className="bg-white border-2 border-gray-200 p-6 sm:p-12 rounded-lg">
-          <h3 className="text-lg sm:text-2xl font-bold text-gray-800 mb-6 sm:mb-8">Company Information</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-12">
-            <div>
-              <h4 className="text-base sm:text-lg font-bold text-blue-600 mb-4">Office Location</h4>
-              <p className="text-sm sm:text-base text-gray-700 mb-2">
-                <strong>AMBE MARKETING</strong>
-              </p>
-              <p className="text-sm sm:text-base text-gray-700 mb-2">
-                Ground Floor, No. 96, Sadar Patrappa Road
-              </p>
-              <p className="text-sm sm:text-base text-gray-700 mb-4">
-                Bangalore, Bengaluru (Bangalore) Urban, Karnataka 560002
-              </p>
-            </div>
-            <div>
-              <h4 className="text-base sm:text-lg font-bold text-blue-600 mb-4">Contact Information</h4>
-              <p className="text-sm sm:text-base text-gray-700 mb-2">
-                <strong>Phone:</strong> <a href="tel:+919036289719" className="text-blue-600 hover:underline">+91 90362 89719</a>
-              </p>
-              <p className="text-sm sm:text-base text-gray-700 mb-2">
-                <strong>Email:</strong> <a href="mailto:admin@ambemarketing.in" className="text-blue-600 hover:underline">admin@ambemarketing.in</a>
-              </p>
-              <p className="text-sm sm:text-base text-gray-700 mb-2">
-                <strong>GST No:</strong> 29AGOPU2897F1ZI
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+export default function About(){return <div>
+ <section className="page-hero page-hero-color"><div className="site-container"><div className="eyebrow">ABOUT AMBE MARKETING</div><h1>Quality products. Dependable service. Complete sourcing.</h1><p>AMBE MARKETING supplies IT, Power Backup and Security Solutions from leading national and international brands.</p></div></section>
+ <section className="section about-page-main"><div className="site-container about-page-grid"><div className="about-page-copy"><div className="eyebrow">WHO WE ARE</div><h2>A trusted supplier and distributor for everyday technology requirements.</h2><p>{aboutText}</p><p>Registered on the Government e-Marketplace (GeM), AMBE MARKETING serves businesses, institutions, government organizations and other customers with genuine products, competitive pricing, reliable sourcing and timely delivery.</p><Link to="/products" className="button button-primary">Explore Products <ArrowRight/></Link></div><div className="about-page-visual"><img src="/assets/about-office-hq.jpg" alt="Modern professional workspace"/><div className="visual-chip"><ShieldIcon/><span><b>Trusted sourcing</b><small>IT · Power · Security</small></span></div></div></div></section>
+ <section className="section section-tint"><div className="site-container"><div className="section-heading centered"><div className="eyebrow">OUR SPECIALIZATION</div><h2>Three core solution areas</h2><p>Focused supply across the categories businesses and institutions depend on.</p></div><div className="special-grid"><article style={{'--accent':'#1556c0'} as CSSProperties}><div className="special-icon"><GridIcon/></div><span>01</span><h3>IT Products & Solutions</h3><p>{specializationText.it}</p></article><article style={{'--accent':'#16854a'} as CSSProperties}><div className="special-icon"><ShieldIcon/></div><span>02</span><h3>UPS & Power Backup Solutions</h3><p>{specializationText.power}</p></article><article style={{'--accent':'#d9232e'} as CSSProperties}><div className="special-icon"><TruckIcon/></div><span>03</span><h3>Security & Surveillance Solutions</h3><p>{specializationText.security}</p></article></div></div></section>
+ <section className="section objective-section"><div className="site-container objective-grid"><div className="objective-visual"><img src="/assets/products-v2/peoplelink.jpg" alt="Technology and collaboration equipment"/></div><div className="objective-copy"><div className="eyebrow">OUR OBJECTIVE</div><h2>Quality products and dependable service under one roof.</h2><p>Our objective is to provide quality products, dependable service, and complete sourcing solutions under one roof.</p><div className="mini-points"><span>Genuine products</span><span>Reliable sourcing</span><span>Timely delivery</span></div></div></div></section>
+ </div>}
