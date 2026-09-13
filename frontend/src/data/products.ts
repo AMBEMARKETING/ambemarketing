@@ -25,7 +25,7 @@ export const productCategories: ProductCategory[] = [
 export const company = {
   name:'AMBE MARKETING',
   tagline:'Your Trusted Partner for IT, Power Backup & Security Solutions.',
-  phone:'+91 90362 89719', phoneHref:'tel:+919036289719', whatsappHref:'https://wa.me/919036289719',
+  phone:'+91 80886 64205', phoneHref:'tel:+918088664205', whatsappHref:'https://wa.me/918088664205',
   email:'admin@ambemarketing.in', emailHref:'mailto:admin@ambemarketing.in',
   address:'Ground Floor, No. 96, Sadar Patrappa Road, Bengaluru, Karnataka 560002'
 };
